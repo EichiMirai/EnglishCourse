@@ -8,21 +8,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/register.css">
-  <title>register</title>
+  <title>sign in</title>
   </head>
   <body>
     <main>
+      <form id="login-form">
       <div class="register-form-container">
         <h1 class="form-title">
           Sign in
         </h1>
-        <div class="form-fields">
-
+        <div class="form-fields" id="input-field">
+          
             <div class="form-field">
-                <input type="text" placeholder="Mail">
+                <input type="text" placeholder="Mail" id="login-email">
             </div>
-            <div class="form-field">
-                <input type="text" placeholder="Password">
+            <div class="form-field" >
+                <input type="Password" placeholder="Password" id="login-password">
             </div>
 
         </div>
@@ -30,7 +31,12 @@
           <button class="button">Sign in</button>
         </div>
       </div>
-
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="scripts/configg.js"></script>
+    <script src="scripts/signin.js"></script>
     </main>
   </body>
   </html>
