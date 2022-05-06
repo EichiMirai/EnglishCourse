@@ -12,29 +12,34 @@
   </head>
   <body>
     <main>
-      <div class="register-form-container">
-        <h1 class="form-title">
-          Registration
-        </h1>
-        <div class="form-fields">
-            <div class="form-field">
-                <input type="text" placeholder="Name">
-            </div>
-            <div class="form-field">
-                <input type="text" placeholder="Mail">
-            </div>
-            <div class="form-field">
-                <input type="text" placeholder="Password">
-            </div>
-            <div class="form-field">
-                <input type="text" placeholder="Confirm password">
-            </div>
+      <form id="signup-form">
+        <div class="register-form-container">
+          <h1 class="form-title">
+            Registration
+          </h1>
+          <div class="form-fields" id="input-field">
+            
+              <div class="form-field">
+                  <input type="text" placeholder="Mail" id="signup-email">
+              </div>
+              <div class="form-field" >
+                  <input type="password" placeholder="Password" id="signup-password">
+              </div>
+  
+          </div>
+          <div class="form-buttons">
+            <button class="button">Sign in</button>
+          </div>
         </div>
-        <div class="form-buttons">
-          <button class="button">Register</button>
-        </div>
-      </div>
+      </form>
+      <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+      <script src="scripts/configg.js"></script>
+      <script src="scripts/auth.js"></script>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </main>
   </body>
   </html>
