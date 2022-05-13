@@ -13,7 +13,7 @@
 
         <header>
 
-          <a href="#" class="logo"> <img src="img/logo.png" alt=""</a>
+          <a href="#" class="logo"> <img src="img/logo.png" alt=""></a>
             <div class="right_header">
 
 
@@ -24,12 +24,13 @@
 
               </ul>
                 <div class="btns">
-
-                    <a href="signIn.html" class="btn_light">Sign in</a>
-                      <a href="register.html" class="btn_green">Rigister</a>
+                    <a href="signIn.html" class="btn_light" id="signin" style="display:none;" >Sign in</a>
+                    <a href="index.html" class="btn_light" style="display:none;" id="logout">Log out</a>
+                      <a href="register.html" class="btn_green" id="login" style="display:none;" >Rigister</a>
 
                     </div>
           </div>
+
         </header>
         <section id="main_banner" style="background-image: url('img/hand.png');">
           <div class="container_custom">
@@ -106,5 +107,11 @@
 
         </footer>
 
+        <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+        <script src="scripts/configg.js"></script>
+        <script src="scripts/index.js"></script>
       </body>
 </html>
+
